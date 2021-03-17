@@ -14,9 +14,7 @@
   background: var(--clr-background);
   font-family: "Poppins";
 }
-h1 {
-  color: var(--clr-neutral);
-}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -24,13 +22,29 @@ body {
   align-items: center;
   flex-direction: column;
 }
-/* .main-menu {
+header {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  border: 1px red solid;
+}
+h1 {
+  color: var(--clr-neutral);
+  font-size: 4rem;
+}
+.main-menu {
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
   margin: 2rem;
-} */
+}
 .menu-btn {
   position: relative;
   display: flex;
