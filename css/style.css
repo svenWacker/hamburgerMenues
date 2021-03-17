@@ -69,15 +69,15 @@ body {
   transform: translateY(16px);
 }
 /* animation burger 1 */
-.menu-btn.open .menu-btn__burger1 {
+.menu-btn.open1 .menu-btn__burger1 {
   transform: translateX(-50px);
   background: transparent;
   box-shadow: none;
 }
-.menu-btn.open .menu-btn__burger1::before {
+.menu-btn.open1 .menu-btn__burger1::before {
   transform: rotate(45deg) translate(35px, -35px);
 }
-.menu-btn.open .menu-btn__burger1::after {
+.menu-btn.open1 .menu-btn__burger1::after {
   transform: rotate(-45deg) translate(35px, 35px);
 }
 
@@ -108,14 +108,16 @@ body {
   transform: translateY(16px);
 }
 /* animation burger 2 */
-.menu-btn.open .menu-btn__burger2 {
-  transform: translateX(-50px);
+.menu-btn.open2 .menu-btn__burger2 {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+}
+.menu-btn.open2 .menu-btn__burger2::before {
   background: transparent;
   box-shadow: none;
 }
-.menu-btn.open .menu-btn__burger2::before {
-  transform: rotate(45deg) translate(35px, -35px);
-}
-.menu-btn.open .menu-btn__burger2::after {
-  transform: rotate(-45deg) translate(35px, 35px);
+.menu-btn.open2 .menu-btn__burger2::after {
+  background: transparent;
+  box-shadow: none;
 }
