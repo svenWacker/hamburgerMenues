@@ -42,13 +42,16 @@ body {
   background: var(--background-color);
   border-radius: 2px;
 }
+.burger1 {
+  box-shadow: 2px 2px 5px rgba(88, 217, 226, 0.733);
+}
 /* burger 1 */
 .menu-btn__burger1 {
   width: 50px;
   height: 6px;
   background: var(--box-color);
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  box-shadow: 2px 2px 5px rgba(88, 217, 226, 0.733);
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger1::before,
@@ -59,7 +62,7 @@ body {
   height: 6px;
   background: var(--box-color);
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  box-shadow: 2px 2px 5px rgba(88, 217, 226, 0.733);
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger1::before {
@@ -83,12 +86,14 @@ body {
 
 /* burger 2 */
 .menu-btn__burger2 {
+  transition: all 0.2s ease-in-out;
   width: 50px;
   height: 6px;
   background: #fff;
   border-radius: 5px;
   /* box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2); */
-  transition: all 0.5s ease-in-out;
+  /* transition: all 0.5s ease-in-out; */
+  /* transition: 0.5s; */
 }
 .menu-btn__burger2::before,
 .menu-btn__burger2::after {
@@ -99,7 +104,8 @@ body {
   background: var(--box-color);
   border-radius: 5px;
   /* box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2); */
-  transition: all 0.5s ease-in-out;
+  /* transition: all 0.5s ease-in-out; */
+  /* transition: 0.5s; */
 }
 .menu-btn__burger2::before {
   transform: translateY(-16px);
@@ -109,9 +115,12 @@ body {
 }
 /* animation burger 2 */
 .menu-btn.open2 .menu-btn__burger2 {
-  height: 10px;
-  width: 10px;
-  border-radius: 5px;
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+  transition: all 0.5s ease-in-out;
+  background-color: red;
+  border: 1px white solid;
 }
 .menu-btn.open2 .menu-btn__burger2::before {
   background: transparent;
