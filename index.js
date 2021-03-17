@@ -22,8 +22,8 @@ menuBtn2.addEventListener("click", () => {
 });
 const menuBtn3 = document.querySelector(".burger3");
 let menuOpen3 = false;
-menuBtn2.addEventListener("click", () => {
-  if (!menuOpen2) {
+menuBtn3.addEventListener("click", () => {
+  if (!menuOpen3) {
     menuBtn3.classList.add("open3");
     menuOpen3 = true;
   } else {
