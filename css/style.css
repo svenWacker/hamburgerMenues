@@ -36,15 +36,15 @@ h1 {
 }
 .main-menu {
   width: 100vw;
-  height: 70vh;
+  height: 60vh;
   position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-
   margin: 2rem;
 }
+
 .menu-btn {
   position: relative;
   display: flex;
@@ -242,4 +242,14 @@ h1 {
   transform: scale(1.2) rotate(-45deg);
   background: rgb(163, 9, 9);
   animation-duration: 0.5s;
+}
+footer {
+  color: var(--clr-neutral);
+  font-size: 2rem;
+  width: 100vw;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 2rem;
 }
