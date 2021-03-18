@@ -247,9 +247,8 @@ footer {
   color: var(--clr-neutral);
   font-size: 2rem;
   width: 100vw;
-  position: relative;
   display: inline-flex;
   align-items: center;
-  flex-direction: row;
-  margin: 2rem;
+  flex-direction: row-reverse;
+  padding: 2rem;
 }
