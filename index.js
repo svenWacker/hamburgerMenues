@@ -31,14 +31,3 @@ menuBtn3.addEventListener("click", () => {
     menuOpen3 = false;
   }
 });
-const menuBtnHeart = document.querySelector(".heart");
-let menuOpenHeart = false;
-menuBtnHeart.addEventListener("click", () => {
-  if (!menuOpenHeart) {
-    menuBtnHeart.classList.add("openHeart");
-    menuOpenHeart = true;
-  } else {
-    menuBtnHeart.classList.remove("openHeart");
-    menuOpenHeart = false;
-  }
-});

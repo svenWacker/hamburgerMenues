@@ -14,7 +14,7 @@
   background: var(--clr-background);
   font-family: "Poppins";
 }
-
+/* body flex */
 body {
   min-height: 100vh;
   display: flex;
@@ -22,6 +22,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
+/* header */
 header {
   width: 100vw;
   height: 20vh;
@@ -34,6 +35,7 @@ h1 {
   color: var(--clr-neutral);
   font-size: 4rem;
 }
+/* main flex */
 .main-menu {
   width: 100vw;
   height: 60vh;
@@ -44,7 +46,6 @@ h1 {
   flex-direction: column;
   margin: 2rem;
 }
-
 .menu-btn {
   position: relative;
   display: flex;
@@ -64,7 +65,6 @@ h1 {
 .burger1 {
   box-shadow: 2px 2px 5px rgba(88, 217, 226, 0.733);
 }
-
 .menu-btn__burger1 {
   width: 50px;
   height: 6px;
@@ -106,7 +106,6 @@ h1 {
 /* burger 2 */
 .burger2 {
   border: 3px solid var(--clr-shadow);
-  /* box-shadow: 2px 2px 5px rgba(88, 217, 226, 0.733); */
 }
 .menu-btn__burger2 {
   width: 50px;
@@ -146,6 +145,7 @@ h1 {
   background: transparent;
   box-shadow: none;
 }
+
 /* burger 3 */
 .menu-btn__burger3 {
   width: 10px;
@@ -169,7 +169,6 @@ h1 {
   transform: translateY(16px);
 }
 /* animation burger 3 */
-
 .menu-btn.open3 .menu-btn__burger3::before {
   background: transparent;
 }
@@ -187,6 +186,18 @@ h1 {
   height: 80px;
   cursor: pointer;
 }
+
+/* footer */
+footer {
+  color: var(--clr-neutral);
+  font-size: 2rem;
+  width: 100vw;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 2rem;
+}
+/* animation heart footer*/
 .heart {
   position: absolute;
   margin: auto;
@@ -225,15 +236,12 @@ h1 {
 /* animation heart */
 @keyframes beat {
   0% {
-    transform: scale(1) rotate(-45deg);
+    transform: scale(0.9) rotate(-45deg);
   }
   50% {
     transform: scale(0.6) rotate(-45deg);
   }
 }
-
-/* animation heart */
-
 .menu-btn-heart:hover .heart:after,
 .menu-btn-heart:hover .heart::before {
   background: rgb(163, 9, 9);
@@ -242,13 +250,4 @@ h1 {
   transform: scale(1.2) rotate(-45deg);
   background: rgb(163, 9, 9);
   animation-duration: 0.5s;
-}
-footer {
-  color: var(--clr-neutral);
-  font-size: 2rem;
-  width: 100vw;
-  display: inline-flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  padding: 2rem;
 }
