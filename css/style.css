@@ -234,15 +234,14 @@ h1 {
 
 /* animation heart */
 
-.menu-btn-heart:hover .heart {
-  transform: scale(1.5) rotate(-45deg);
-  background: darkred;
-  color: darkred;
-  top: 15px;
-}
 .menu-btn-heart:hover .heart:after,
 .menu-btn-heart:hover .heart::before {
-  transform: scale(1.5) rotate(-45deg);
   background: darkred;
   color: darkred;
+}
+.menu-btn-heart:hover .heart {
+  transform: scale(1.2) rotate(-45deg);
+  background: darkred;
+  color: darkred;
+  animation-duration: 0.5s;
 }
