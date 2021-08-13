@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://127.0.0.1:5500/assignments/MobileApp/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sven Wacker">
+    <title>Mobile App</title>
+    
+    
+  <link rel="icon" href="http://127.0.0.1:5500/assignments/MobileApp/img/mobile-icon.png"><link rel="stylesheet" href="./Mobile App_files/style.css"></head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <div class="split-navbar">
+          <div class="navbar-logo">
+            <img class="logo" src="./Mobile App_files/logo_001.png" alt="logo">
+          </div>
+          <div class="navbar-list">
+            <ul>
+              <li><a href="http://127.0.0.1:5500/assignments/MobileApp/index.html#products">Products</a></li>
+              <li><a href="http://127.0.0.1:5500/assignments/MobileApp/index.html#prices">Prices</a></li>
+              <li><a href="http://127.0.0.1:5500/assignments/MobileApp/index.html#blog">Blog</a></li>
+              <li><a href="http://127.0.0.1:5500/assignments/MobileApp/index.html#team">Team</a></li>
+              <li><a href="http://127.0.0.1:5500/assignments/MobileApp/index.html#login">Login</a></li>
+              <li><a href="http://127.0.0.1:5500/assignments/MobileApp/index.html#signup">Sign up</a></li>
+            </ul>
+          </div>
+          <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="split">
+          <div class="main-left">
+            <h1>Make your Startup web with our template,</h1>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              ipsum, fuga, accusantium quod aspernatur sequi amet, numquam
+              laudantium perferendis consequatur aliquid culpa! Enim iste labore
+              ad minima officiis esse fugit, tempora aliquid? Voluptate ut ad,
+              deserunt aliquid assumenda maiores dicta?
+            </p>
+            <div class="buttons">
+              <button class="button1">Learn More</button>
+              <button class="button2">Get The App</button>
+            </div>
+          </div>
+          <div class="main-left">
+            <div class="phones">
+              <img src="./Mobile App_files/phone_002.png" class="images" alt="phone2">
+            </div>
+            <div class="phones">
+              <img src="./Mobile App_files/phone_001.png" class="images" alt="phone1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let clicked = false;
+      document.querySelector(".hamburger").addEventListener("click", () => {
+        clicked = !clicked;
+        console.log(clicked);
+        if (clicked) {
+          document.querySelector(".navbar-list").style.cssText =
+            "display: block; ";
+        } else {
+          document.querySelector(".navbar-list").style.cssText =
+            "display: none;";
+        }
+      });
+
+      // const mobileBtn = document.getElementById("mobile-cta");
+      // nav = document.querySelector("nav");
+      // mobileBtnExit = document.getElementById("mobile-exit");
+
+      // mobileBtn.addEventListener("click", () => {
+      //   nav.classList.add("menu-btn");
+      // });
+
+      // mobileBtnExit.addEventListener("click", () => {
+      //   nav.classList.remove("menu-btn");
+      // });
+    </script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
